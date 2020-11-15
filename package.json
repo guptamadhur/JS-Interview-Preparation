@@ -1,0 +1,19 @@
+{
+  "name": "js-interview-preparation",
+  "version": "1.0.0",
+  "description": "Java Script Interview Preparation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guptamadhur/JS-Interview-Preparation.git"
+  },
+  "author": "Madhur Gupta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guptamadhur/JS-Interview-Preparation/issues"
+  },
+  "homepage": "https://github.com/guptamadhur/JS-Interview-Preparation#readme"
+}
