@@ -1,0 +1,50 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Align Center Example</title>
+</head>
+<style>
+  * {
+    margin: 0;
+  }
+
+  span {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    background: black;
+    color: white;
+  }
+
+  body:after,
+  body:before {
+    content: '';
+    position: absolute;
+    background: red;
+  }
+
+  body:after {
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+  }
+
+  body:before {
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+  }
+</style>
+
+<body>
+  <span>center me</span>
+</body>
+
+</html>
+<!-- Flex Container -->
+<!-- https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container -->
