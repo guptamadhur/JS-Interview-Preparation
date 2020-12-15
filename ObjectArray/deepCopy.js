@@ -1,3 +1,5 @@
+// https://codeinterview.io/YAORADJLWO
+
 //Solution 1:
 const deepCompare = (val1, val2) =>
   JSON.stringify(val1) === JSON.stringify(val2);

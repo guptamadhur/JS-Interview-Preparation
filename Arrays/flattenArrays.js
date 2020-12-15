@@ -1,4 +1,5 @@
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flat
+// https://codeinterview.io/YAORADJLWO
 
 const flattenArray = (arr) => {
   if (arr == null || !Array.isArray(arr)) return [];
