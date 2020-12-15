@@ -1,3 +1,5 @@
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flat
+
 const flattenArray = (arr) => {
   if (arr == null || !Array.isArray(arr)) return [];
   return arr.reduce(
