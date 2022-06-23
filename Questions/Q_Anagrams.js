@@ -18,6 +18,7 @@ const getGroupedAnagrams = (words) => {
   });
   return anagrams;
 };
+
 const groupedAnagrams = getGroupedAnagrams(words);
 for (const sortedWord in groupedAnagrams) {
   console.log(sortedWord, groupedAnagrams[sortedWord].toString());
