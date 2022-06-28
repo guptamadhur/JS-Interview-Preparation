@@ -1,2 +1,2 @@
 # JS-Interview-Preparation
-Java Script Interview Preparation
+JavaScript Interview Preparation
