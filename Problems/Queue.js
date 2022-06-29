@@ -22,6 +22,7 @@ class Queue {
         * returns the front element of the queue, without
         * modifying the queue
         */
+        return this.ele[this.head];
      }
   
      remove = () => {
@@ -37,10 +38,13 @@ class Queue {
   
      length = () => {
        /** returns how many elements are present in the queue */
+       return this.tail - this.head;
      }
   
      clear = () => {
        /** empties the queue */
+       this.head = 0;
+       this.tail = 0;
      }
   }
   
