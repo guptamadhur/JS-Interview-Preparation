@@ -37,6 +37,7 @@ ad(3, 4) //arguments
 
 
 // First Class Functions 
+// Ability to be used as a value
 // function passing inside a function
 
 
