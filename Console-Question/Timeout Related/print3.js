@@ -1,7 +1,7 @@
-for (var i = 0; i < 5; i++) {
-  setTimeout(function () {
-    console.log(i);
-  }, i * 1000);
-}
 
-// 5 5 5 5 5 
+for (var i = 0; i < 4; i++) {
+    setTimeout(() => console.log(i), 0)
+  }
+   
+  // 0, 1 ,2 ,3
+  
