@@ -14,3 +14,21 @@ function outest() {
 let a = 100;
 var close = outest()("Hello"); // outer()();
 close();
+
+
+function counter(){
+    var count = 0;
+    return function increment(){
+        count ++;
+        console.log(count);
+    }
+}
+
+var count1 = counter();
+count1();
+count1();
+
+var count2 = counter();
+count2();
+count2();
+
