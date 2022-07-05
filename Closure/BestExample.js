@@ -16,6 +16,7 @@ var close = outest()("Hello"); // outer()();
 close();
 
 
+// Exmaple 1: hiding and data encapsulation 
 function counter(){
     var count = 0;
     return function increment(){
@@ -32,3 +33,20 @@ var count2 = counter();
 count2();
 count2();
 
+// Exmaple 2: Better way Hiding and data encapsulation 
+function betterCounter(){
+    var count = 0;
+    this.incrementCounter =  function(){
+        count ++;
+        console.log(count);
+    }
+    this.decrementCounter =  function(){
+        count --;
+        console.log(count);
+    }
+}
+
+var counter1 = new betterCounter();
+counter1.incrementCounter();
+counter1.incrementCounter();
+counter1.decrementCounter();
