@@ -21,10 +21,10 @@ optionWithLet(); // 0 1 2 3 4
 // Option 2: to fix the issue :- 
 const optionWithoutLet = () => {
   for (let i = 0; i < 5; i++) {
-    function func(i) {
+    function func(x) {
       setTimeout(function () {
-        console.log(i);
-      }, i * 1000);
+        console.log(x);
+      }, x * 1000);
     }
     func(i);
   }
