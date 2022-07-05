@@ -50,3 +50,14 @@ var counter1 = new betterCounter();
 counter1.incrementCounter();
 counter1.incrementCounter();
 counter1.decrementCounter();
+
+// Garbage collected smarty
+function aa(){
+    var x =9, z =10;
+    return function s(){
+        console.log(x);
+    }
+}
+
+var y = aa();
+y();
