@@ -1,6 +1,21 @@
 // https://javascript.info/currying-partials
 // https://codeinterview.io/YAORADJLWO
 
+// Example 1
+let multiple = function (x) {
+  return function (y) {
+    console.log(x * y);
+  }
+}
+
+let multipleOfTwo = multiple(2);
+multipleOfTwo(3);
+
+let multipleOfFour = multiple(4);
+multipleOfFour(3);
+
+
+// Example 2
 const curry = (func) => {
   return function curried(...args) {
     if (args.length >= func.length) {
