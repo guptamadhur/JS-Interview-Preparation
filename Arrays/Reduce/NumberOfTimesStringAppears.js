@@ -1,5 +1,12 @@
 /* Transform an array of strings into a single object that shows,
-how many times each string appears in the array.*/
+how many times each string appears in the array.
+
+
+o/p:
+
+{ dog: 2, chicken: 3, cat: 1, rabbit: 1 }
+
+*/
 
 var pets = ["dog", "chicken", "cat", "dog", "chicken", "chicken", "rabbit"];
 

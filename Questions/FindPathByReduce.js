@@ -18,6 +18,16 @@ e.q 3
 
 */
 
+var a = {
+  b: 5,
+  d: {
+    c: 6,
+    e: {
+      q: 3
+    }
+  }
+};
+
 function index(obj, i) {
   return obj[i] ? obj[i] : "undefined";
 }

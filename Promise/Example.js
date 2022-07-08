@@ -1,3 +1,4 @@
+
 let promise = new Promise(function (resolve, reject) {
   setTimeout(() => resolve("done"), 1000);
   setTimeout(() => reject(new Error("Whoops!")), 2000); // gettings ignored
