@@ -39,3 +39,8 @@ console.log(curriedFunction(1)(2, 3)); // 6, currying of 1st arg
 console.log(curriedFunction(1)(2)(3)); // 6, full currying
 console.log(curriedFunction(1, 2)(3, 4)); // 6, full currying
 console.log(curriedFunction(1)(2)(3, 4)); // 6, full currying
+
+
+// Example 3:
+let mul = a => b => b ? mul(a * b) : a;
+console.log(mul(1)(2)(3)(4)()); // 6, full currying
