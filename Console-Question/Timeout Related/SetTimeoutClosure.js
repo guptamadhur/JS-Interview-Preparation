@@ -18,7 +18,7 @@ const optionWithLet = () => {
 optionWithLet(); // 0 1 2 3 4
 
 
-// Option 2: to fix the issue :- 
+// Option 2: closure
 const optionWithoutLet = () => {
   for (let i = 0; i < 5; i++) {
     function func(x) {

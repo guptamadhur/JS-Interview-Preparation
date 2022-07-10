@@ -7,10 +7,10 @@ o/p:
 4 : 3 : [ 1, 2, 3, 4 ]
 */
 
-Array.prototype.mymap = function (callback) {
+Array.prototype.mymap = function (func) {
   const resultArray = [];
   for (let index = 0; index < this.length; index++) {
-    resultArray.push(callback(this[index], index, this));
+    resultArray.push(func(this[index], index, this));
   }
   return resultArray;
 };
