@@ -12,8 +12,15 @@ let myObj = {
       }.bind(this)
     );
   },
+  render2() {
+    this.asyncGet(() => {
+      this.parse();
+    }
+    );
+  },
 };
 
 myObj.render();
+myObj.render2();
 
 // Parse Called
